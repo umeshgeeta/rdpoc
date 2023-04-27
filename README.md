@@ -24,7 +24,7 @@ Some of the queries to filter & search product data is as follows:
 curl -k --location --request POST 'https://us-west-2.aws.data.mongodb-api.com/app/data-ibscs/endpoint/data/v1/action/findOne' \
 --header 'Content-Type: application/json' \
 --header 'Access-Control-Request-Headers: *' \
---header 'api-key: YXwdPE45lAS866hzv1cbttFTSxXu2Pc58QaoAHaLk0CNl7Jx03SLNmcYTfsrpTEt' \
+--header 'api-key: XXX' \
 --data-raw '{
 "collection":"product",
 "database":"rd-poc-db",
@@ -37,7 +37,7 @@ curl -k --location --request POST 'https://us-west-2.aws.data.mongodb-api.com/ap
 curl -k --location --request POST 'https://us-west-2.aws.data.mongodb-api.com/app/data-ibscs/endpoint/data/v1/action/find' \
 --header 'Content-Type: application/json' \
 --header 'Access-Control-Request-Headers: *' \
---header 'api-key: YXwdPE45lAS866hzv1cbttFTSxXu2Pc58QaoAHaLk0CNl7Jx03SLNmcYTfsrpTEt' \
+--header 'api-key: XXX' \
 --data-raw '{
 "collection":"product",
 "database":"rd-poc-db",
@@ -51,7 +51,7 @@ curl -k --location --request POST 'https://us-west-2.aws.data.mongodb-api.com/ap
 curl -k --location --request POST 'https://us-west-2.aws.data.mongodb-api.com/app/data-ibscs/endpoint/data/v1/action/find' \
 --header 'Content-Type: application/json' \
 --header 'Access-Control-Request-Headers: *' \
---header 'api-key: YXwdPE45lAS866hzv1cbttFTSxXu2Pc58QaoAHaLk0CNl7Jx03SLNmcYTfsrpTEt' \
+--header 'api-key: XXX' \
 --data-raw '{
 "collection":"product",
 "database":"rd-poc-db",
@@ -65,7 +65,7 @@ curl -k --location --request POST 'https://us-west-2.aws.data.mongodb-api.com/ap
 curl -k --location --request POST 'https://us-west-2.aws.data.mongodb-api.com/app/data-ibscs/endpoint/data/v1/action/find' \
 --header 'Content-Type: application/json' \
 --header 'Access-Control-Request-Headers: *' \
---header 'api-key: YXwdPE45lAS866hzv1cbttFTSxXu2Pc58QaoAHaLk0CNl7Jx03SLNmcYTfsrpTEt' \
+--header 'api-key: XXX' \
 --data-raw '{
 "collection":"product",
 "database":"rd-poc-db",
@@ -79,7 +79,7 @@ curl -k --location --request POST 'https://us-west-2.aws.data.mongodb-api.com/ap
 curl -k --location --request POST 'https://us-west-2.aws.data.mongodb-api.com/app/data-ibscs/endpoint/data/v1/action/aggregate' \
 --header 'Content-Type: application/json' \
 --header 'Access-Control-Request-Headers: *' \
---header 'api-key: YXwdPE45lAS866hzv1cbttFTSxXu2Pc58QaoAHaLk0CNl7Jx03SLNmcYTfsrpTEt' \
+--header 'api-key: XXX' \
 --data-raw '{
 "collection":"product",
 "database":"rd-poc-db",
@@ -92,7 +92,7 @@ curl -k --location --request POST 'https://us-west-2.aws.data.mongodb-api.com/ap
 curl -k --location --request POST 'https://us-west-2.aws.data.mongodb-api.com/app/data-ibscs/endpoint/data/v1/action/aggregate' \
 --header 'Content-Type: application/json' \
 --header 'Access-Control-Request-Headers: *' \
---header 'api-key: YXwdPE45lAS866hzv1cbttFTSxXu2Pc58QaoAHaLk0CNl7Jx03SLNmcYTfsrpTEt' \
+--header 'api-key: XXX' \
 --data-raw '{
 "collection":"product",
 "database":"rd-poc-db",
@@ -106,7 +106,7 @@ curl -k --location --request POST 'https://us-west-2.aws.data.mongodb-api.com/ap
 curl -k --location --request POST 'https://us-west-2.aws.data.mongodb-api.com/app/data-ibscs/endpoint/data/v1/action/aggregate' \
 --header 'Content-Type: application/json' \
 --header 'Access-Control-Request-Headers: *' \
---header 'api-key: YXwdPE45lAS866hzv1cbttFTSxXu2Pc58QaoAHaLk0CNl7Jx03SLNmcYTfsrpTEt' \
+--header 'api-key: XXX' \
 --data-raw '{
 "collection":"product",
 "database":"rd-poc-db",
@@ -125,7 +125,7 @@ To add product data:
 curl -k --location --request POST 'https://us-west-2.aws.data.mongodb-api.com/app/data-ibscs/endpoint/data/v1/action/insertOne' \
 --header 'Content-Type: application/json' \
 --header 'Access-Control-Request-Headers: *' \
---header 'api-key: YXwdPE45lAS866hzv1cbttFTSxXu2Pc58QaoAHaLk0CNl7Jx03SLNmcYTfsrpTEt' \
+--header 'api-key: XXX' \
 --data-raw '{"collection":"product","database":"rd-poc-db","dataSource":"RundooCluster0","document": {"name": "BEHR MARQUEE Keystone Satin Enamel","category": "Exterior Paint","sku": "945305"}
 }'
 
