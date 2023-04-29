@@ -45,17 +45,6 @@ func main() {
 	http.ListenAndServe(":8000", r)
 }
 
-// searchItems returns a list of items that match the query
-func searchItems2(query string) []Item {
-	// TODO: Perform search logic and return a list of items
-	return []Item{
-		{Id: "64471f8ad9469e85b6238d9e",
-			Name:     "BEHR MARQUEE Keystone Satin Enamel",
-			Category: "Exterior Paint",
-			Sku:      "945305"},
-	}
-}
-
 func handleSearch(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("received search call")
 	query := r.URL.Query().Get("q")
