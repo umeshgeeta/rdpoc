@@ -32,11 +32,13 @@ clean:
 # Define the build target
 .PHONY: build
 build: clean
-	mkdir -p $(BUILD_DIR) $(PUBLIC_DIR)
-	$(NODE) $(WEBPACK) --mode=production
+	export GOPATH=$(CURDIR)/src/server && \
+	mkdir -p $(BUILD_DIR) $(PUBLIC_DIR) && \
+	$(NODE) $(WEBPACK) --mode=production && \
 	$(GO_COMPILER) build $(GO_COMPILER_FLAGS) -o $(BUILD_FILE) $(GO_FILES)
 
 # Define the run target
 .PHONY: run
 run: build
+	export GOPATH=$(CURDIR)/src/server && \
 	$(RUN_CMD)

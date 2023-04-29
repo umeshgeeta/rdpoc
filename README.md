@@ -16,6 +16,8 @@ sku: (string) Product SKU number like "945305"
 We have defined Search index on this MongoDB database collection and then we leverage
 full-text search capabilities provided by MongoDB to find products. 
 
+![My Image](rdpoc-web-ui.png)
+
 # Mongo DB Queries
 
 Some of the queries to filter & search product data is as follows:
@@ -147,13 +149,3 @@ As for the UI, it is a very preliminary React JS application bundled using webpa
 webpack --stats-error-details=true /Users/umeshpatil/git/rdpoc/src/App.js -o /Users/umeshpatil/git/rdpoc/public/bundle.js
 
 to generate the JavaScript bundle to consume on the browser client side.
-
-# Remaining Tasks
-
-Now that the scaffolding is in place and immplementation 'unknowns' are made 'known'; following items will be undertaken:
-- Add code in Go server to issue MongoDB commands
-- Implement further JavaScript client to Go server communication
-- Handle marshalling & unmarshalling complexities which would arise in both above tasks
-- Implement Add product end-to-end along with minor UI
-- Tie the lose ends like correcting the Make file and Go module files and any other command lines to build/run 
-the project.
